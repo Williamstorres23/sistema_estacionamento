@@ -1,0 +1,153 @@
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Links de navegação */
+nav {
+  background: #003366;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Conteúdo principal */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões */
+button {
+  background-color: #004080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  color: #004080;
+}
+
+/* Rodapé */
+footer {
+  background: #003366;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+}
+
+/* Estilo Global */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Navegação */
+nav {
+  background: #002f5f;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* Caixa Central */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões */
+button {
+  background-color: #004080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  color: #004080;
+}
+
+/* Rodapé */
+footer {
+  background: #002f5f;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}

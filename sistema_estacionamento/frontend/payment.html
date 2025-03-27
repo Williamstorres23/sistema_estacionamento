@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Pagar Estacionamento</h2>
+
+    <label for="estacionamento_id">ID do Estacionamento:</label>
+    <input type="number" id="estacionamento_id">
+
+    <label for="metodo">Método de Pagamento:</label>
+    <select id="metodo">
+        <option value="Cartão de Crédito">Cartão de Crédito</option>
+        <option value="Cartão de Débito">Cartão de Débito</option>
+        <option value="PIX">PIX</option>
+        <option value="Dinheiro">Dinheiro</option>
+    </select>
+
+    <button onclick="realizarPagamento()">Pagar</button>
+
+    <p id="status"></p>
+
+    <script>
+        async function realizarPagamento() {
+            const estacionamentoId = document.getElementById("estacionamento_id").value;
+            const metodo = document.getElementById("metodo").value;
+
+            const response = await fetch("http://localhost:8000/pagar/?estacionamento_id=" + estacionamentoId + "&metodo_pagamento=" + metodo, { method: "POST" });
+            const data = await response.json();
+
+            document.getElementById("status").innerText = data.message;
+        }
+    </script>
+</body>
+</html>
